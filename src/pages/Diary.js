@@ -17,7 +17,6 @@ const Diary = () => {
       const targetDiary = diaryList.find(
         (it) => parseInt(it.id) === parseInt(id)
       );
-      console.log(targetDiary);
       if (targetDiary) {
         //일기가 존재할 때
         setData(targetDiary);
@@ -35,7 +34,6 @@ const Diary = () => {
     const curEmotionData = emotionList.find(
       (it) => parseInt(it.emotion_id) === parseInt(data.emotion)
     );
-    console.log(curEmotionData);
     return (
       <div className="DiaryPage">
         <MyHeader

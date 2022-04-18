@@ -7,10 +7,8 @@ const Edit = () => {
   const [originData, setOriginData] = useState();
   const navigate = useNavigate();
   const { id } = useParams();
-  // console.log(id);
 
   const diaryList = useContext(DiaryStateContext);
-  // console.log(diaryList);
 
   useEffect(() => {
     if (diaryList.length >= 1) {
@@ -27,7 +25,6 @@ const Edit = () => {
       }
     }
   }, [id, diaryList]);
-  console.log(originData);
   return (
     <div>
       {originData && <DiaryEditor isEdit={true} originData={originData} />}
