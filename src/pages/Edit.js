@@ -17,7 +17,6 @@ const Edit = () => {
       );
 
       if (targetDiary) {
-        console.log(targetDiary);
         setOriginData(targetDiary);
       } else {
         alert("없는 일기입니다.");

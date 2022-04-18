@@ -42,13 +42,6 @@ export const DiaryStateContext = React.createContext();
 export const DiaryDispatchContext = React.createContext();
 
 function App() {
-  // useEffect(() => {
-  //   const item1 = localStorage.getItem("item1");
-  //   const item2 = localStorage.getItem("item2");
-  //   const item3 = JSON.parse(localStorage.getItem("item3"));
-  //   console.log({ item1, item2, item3 });
-  // }, []);
-
   const [data, dispatch] = useReducer(reducer, []);
 
   useEffect(() => {
